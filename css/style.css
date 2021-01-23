@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1abc9c;
+    height: 100vh;
+}
+
+/* .siteBody {
+    background-color: #25343E;
+} */
+
+.container {
+    margin: 100px auto;
+    width: 75px;
+    height: 200px; 
+    border: 1px solid #214049;
+    background-color: #2F3B50;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 5px;
+    box-shadow: 0px 0px 14px 1px #2F3B50;
+    position: relative;
+}
+
+#offbtn {
+    position: absolute;
+    background-color: #2F3B50;
+    border: 1px solid #214049;
+    left: 100px;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 5px 10px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 10px;
+}
+
+#offbtn:hover {
+    box-shadow: 0px 0px 14px 1px #2F3B50;
+}
+
+#offbtn:active {
+    transform: scale(1.1, 1.1);
+}
+
+#onbtn {
+    position: absolute;
+    background-color: #2F3B50;
+    border: 1px solid #214049;
+    right: 100px;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 8px 10px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 10px;
+}
+
+#onbtn:active {
+    transform: scale(1.1, 1.1);
+}
+
+#onbtn:hover {
+    box-shadow: 0px 0px 14px 1px #2F3B50;
+}
+
+.circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #202A38;
+    position: relative;
+}
+
+.circle::after {
+    border-right: 4px solid rgba(255, 255, 255, 0.6);
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.red {
+    background-color: #c0392b;
+    box-shadow: 0 0 20px 5px #c0392b;
+}
+
+.yellow {
+    background-color: yellow;
+    box-shadow: 0 0 20px 5px yellow;
+}
+
+.green {
+    background-color: green;
+    box-shadow: 0 0 20px 5px green;
+}
